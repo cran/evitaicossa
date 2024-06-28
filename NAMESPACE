@@ -1,0 +1,17 @@
+useDynLib(evitaicossa, .registration=TRUE)
+exportPattern("^[[:alpha:]]+")
+
+importFrom("Rcpp", "evalCpp") 
+importFrom("stats", "setNames")
+importFrom("methods", "new")
+importFrom("methods", "as")
+
+importFrom("disordR","disord")
+importFrom("disordR","hashcal")
+importFrom("disordR","hash")
+importFrom("disordR","consistent")
+importFrom("disordR","elements")
+importFrom("disordR","is.disord")
+importFrom("disordR","lapply")
+
+importFrom("Rdpack","reprompt")
